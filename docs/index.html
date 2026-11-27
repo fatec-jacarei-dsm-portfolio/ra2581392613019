@@ -6,18 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Portfólio acadêmico de Henrique G. Camargo - Desenvolvimento de Software Multiplataforma - FATEC Jacareí.">
+        content="Portfólio acadêmico de Henrique Gussao Camargo — Desenvolvimento de Software Multiplataforma na FATEC Jacareí. Product Owner do EcoPulse, com projetos em React, Node.js, TypeScript e PostgreSQL.">
+    <meta name="author" content="Henrique Gussao Camargo">
+    <meta name="theme-color" content="#0f172a">
 
-    <title>Henrique G. Camargo | Portfólio Acadêmico</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Henrique Gussao Camargo | Portfólio Acadêmico">
+    <meta property="og:description"
+        content="Product Owner do EcoPulse e desenvolvedor full-stack em formação na FATEC Jacareí.">
+    <meta property="og:image" content="assets/ecopulse/dashboard.png">
 
+    <title>Henrique Gussao Camargo | Portfólio Acadêmico</title>
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="hero">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-        <nav class="navbar container">
+    <header class="hero" id="inicio">
+
+        <nav class="navbar container" aria-label="Navegação principal">
 
             <a href="#inicio" class="logo">
                 Henrique G. Camargo
@@ -26,47 +37,64 @@
             <div class="nav-links">
                 <a href="#sobre">Sobre</a>
                 <a href="#projetos">Projetos</a>
+                <a href="#atividade">Atividade</a>
                 <a href="#formacao">Formação</a>
                 <a href="#contato">Contato</a>
             </div>
 
         </nav>
 
-        <div class="hero-content container" id="inicio">
+        <div class="hero-content container">
 
             <div class="hero-text">
 
                 <p class="eyebrow">
-                    FATEC JACAREÍ · DSM
+                    FATEC Jacareí · Desenvolvimento de Software Multiplataforma
                 </p>
 
                 <h1>
-                    Henrique G. Camargo
+                    Henrique Gussao Camargo
                 </h1>
 
                 <h2>
-                    Desenvolvedor de Software em formação
+                    Product Owner e desenvolvedor full-stack em formação
                 </h2>
 
                 <p class="hero-description">
-                    Estudante de Desenvolvimento de Software Multiplataforma,
-                    construindo minha trajetória acadêmica e profissional por
-                    meio de projetos, tecnologia e resolução de problemas reais.
+                    Do backlog ao código, do dashboard ao vídeo de apresentação.
+                    No 2º semestre, liderei o produto <strong>EcoPulse</strong> —
+                    uma plataforma GreenOps que mede a pegada de carbono de
+                    aplicações — e coloquei a mão na implementação das telas,
+                    das rotas e da documentação.
                 </p>
 
                 <div class="hero-actions">
 
+                    <a href="#projetos" class="button button-primary">
+                        Ver projetos
+                    </a>
+
                     <a href="https://github.com/henriqueptbd-cell" target="_blank" rel="noopener noreferrer"
-                        class="button button-primary">
+                        class="button button-secondary">
                         GitHub
                     </a>
 
-                    <a href="https://www.linkedin.com/in/henrique-camargo-6275a6394/" target="_blank"
-                        rel="noopener noreferrer" class="button button-secondary">
-                        LinkedIn
-                    </a>
-
                 </div>
+
+                <ul class="hero-facts" aria-label="Resumo do perfil">
+                    <li>
+                        <strong>35</strong>
+                        pull requests no EcoPulse
+                    </li>
+                    <li>
+                        <strong>109</strong>
+                        revisões de código
+                    </li>
+                    <li>
+                        <strong>2DSM</strong>
+                        semestre avaliado em 2026
+                    </li>
+                </ul>
 
             </div>
 
@@ -75,22 +103,24 @@
     </header>
 
 
-    <main>
+    <main id="conteudo">
 
-        <!-- SOBRE -->
+        <!-- =====================================================
+             SOBRE
+             ===================================================== -->
 
-        <section class="section" id="sobre">
+        <section class="section" id="sobre" aria-labelledby="sobre-titulo">
 
             <div class="container">
 
                 <div class="section-heading">
 
                     <p class="eyebrow">
-                        Sobre mim
+                        Apresentação
                     </p>
 
-                    <h2>
-                        Minha trajetória
+                    <h2 id="sobre-titulo">
+                        Quem eu sou
                     </h2>
 
                 </div>
@@ -99,279 +129,1044 @@
 
                     <div class="about-photo">
 
-                        <div class="photo-placeholder">
-                            <img class="photo-placeholder" src="https://avatars.githubusercontent.com/u/233653222?v=4"
-                                alt="Henrique G. Camargo">
-                        </div>
+                        <img src="assets/foto-perfil.jpg" width="460" height="460"
+                            alt="Retrato de Henrique Gussao Camargo">
+
+                        <p class="photo-caption">
+                            Henrique Gussao Camargo<br>
+                            <span>FATEC Jacareí · 2DSM</span>
+                        </p>
 
                     </div>
 
                     <div class="about-content">
 
                         <p>
-                            Sou Desenvolvedor de Software em formação,
-                            atualmente cursando a Graduação Tecnológica em
-                            Desenvolvimento de Software Multiplataforma na
-                            FATEC Jacareí.
-                        </p>
-
-                        <p>
+                            Sou estudante de <strong>Desenvolvimento de Software
+                            Multiplataforma</strong> na FATEC Jacareí, turma de 2026.
                             Minha trajetória profissional começou em áreas
-                            administrativas, atendimento ao cliente, compras
-                            e controle de estoque. Em 2020, fundei minha
-                            própria marcenaria, desenvolvendo conhecimentos
-                            técnicos, operacionais e administrativos para
-                            conduzir o negócio.
+                            administrativas, atendimento ao cliente, compras e
+                            controle de estoque. Em 2020, fundei minha própria
+                            marcenaria e passei a responder por orçamento,
+                            produção, prazos e relacionamento com clientes.
                         </p>
 
                         <p>
-                            Em 2026, retomei minha formação acadêmica na área
-                            de tecnologia e passei a direcionar minha
-                            experiência em negócios, processos e resolução
-                            de problemas para o desenvolvimento de software.
+                            Em 2026, retomei a formação acadêmica e direcionei
+                            essa experiência de negócio para o desenvolvimento de
+                            software. No <strong>1º semestre</strong>, fui
+                            desenvolvedor no ScrumFlow, um portal de certificação
+                            em metodologias ágeis. No <strong>2º semestre</strong>,
+                            atuei como <strong>Product Owner</strong> do EcoPulse,
+                            acumulando a gestão do produto com entregas de
+                            front-end, back-end, infraestrutura e documentação.
                         </p>
 
                         <p>
-                            Meu objetivo é construir uma carreira em
-                            desenvolvimento de software, ampliando
-                            continuamente meus conhecimentos técnicos e
-                            minha capacidade de transformar problemas em
-                            soluções digitais.
+                            Gosto de problemas que exigem entender o todo: o
+                            requisito, o dado, a tela e a pessoa que vai usar.
+                            Busco minha primeira oportunidade como desenvolvedor,
+                            em um time em que eu possa aprender com revisão de
+                            código de verdade e entregar valor desde o começo.
                         </p>
 
-                    </div>
+                        <div class="interests">
 
-                </div>
+                            <h3>Áreas de interesse</h3>
 
-            </div>
-
-        </section>
-
-
-        <!-- PROJETOS -->
-
-        <section class="section section-alt" id="projetos">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        Trajetória acadêmica
-                    </p>
-
-                    <h2>
-                        Projetos
-                    </h2>
-
-                    <p>
-                        Projetos desenvolvidos ao longo da graduação em
-                        Desenvolvimento de Software Multiplataforma.
-                    </p>
-
-                </div>
-
-
-                <div class="project-card">
-
-                    <div class="project-header">
-
-                        <div>
-
-                            <span class="project-semester">
-                                1DSM · 1º Semestre de 2026
-                            </span>
-
-                            <h3>
-                                ScrumFlow
-                            </h3>
-
-                            <p class="project-subtitle">
-                                Portal de Certificação em Metodologias Ágeis
-                            </p>
+                            <ul class="tags" aria-label="Áreas de interesse">
+                                <li>Desenvolvimento full-stack</li>
+                                <li>APIs REST</li>
+                                <li>React e TypeScript</li>
+                                <li>Node.js</li>
+                                <li>Dados e visualização</li>
+                                <li>Produto e requisitos</li>
+                                <li>GreenOps e sustentabilidade</li>
+                            </ul>
 
                         </div>
 
-                    </div>
+                        <div class="objectives">
 
+                            <h3>Objetivos</h3>
 
-                    <div class="project-content">
-
-                        <div class="project-description">
-
-                            <h4>Sobre o projeto</h4>
-
-                            <p>
-                                Projeto acadêmico desenvolvido em equipe para
-                                a disciplina de Aprendizagem Baseada em
-                                Projetos (ABP), com o objetivo de criar um
-                                portal de certificação interna em metodologias
-                                ágeis.
-                            </p>
-
-                            <p>
-                                A plataforma permite que o usuário se cadastre,
-                                realize avaliações progressivas organizadas
-                                por módulos e, ao concluir o processo, receba
-                                um certificado digital com suas notas e
-                                validação por hash.
-                            </p>
-
-                        </div>
-
-
-                        <div class="project-contribution">
-
-                            <h4>Minha contribuição</h4>
-
-                            <p>
-                                Atuei como desenvolvedor durante as três
-                                sprints do projeto, com foco principal no
-                                front-end e na integração com o back-end,
-                                além de colaborar na documentação e nas
-                                entregas da equipe.
-                            </p>
-
-                            <ul>
-
-                                <li>
-                                    Contribuí na definição da identidade visual
-                                    e prototipação da aplicação no Figma.
-                                </li>
-
-                                <li>
-                                    Desenvolvi a estrutura inicial em
-                                    HTML, CSS e JavaScript.
-                                </li>
-
-                                <li>
-                                    Desenvolvi as páginas de cadastro e login,
-                                    incluindo validação de formulários e CPF.
-                                </li>
-
-                                <li>
-                                    Realizei a integração do front-end com a
-                                    API utilizando <code>fetch</code>.
-                                </li>
-
-                                <li>
-                                    Implementei a lógica de sorteio de questões
-                                    e controle de tentativas por módulo.
-                                </li>
-
-                                <li>
-                                    Desenvolvi as telas de resultado e
-                                    histórico de respostas.
-                                </li>
-
-                                <li>
-                                    Colaborei na geração e validação do
-                                    certificado digital.
-                                </li>
-
-                                <li>
-                                    Participei da construção do painel
-                                    administrativo e dos refinamentos de
-                                    UX/UI.
-                                </li>
-
-                                <li>
-                                    Colaborei na documentação técnica e
-                                    participei das cerimônias Scrum.
-                                </li>
-
-                                <li>
-                                    Utilizei Git Flow para organização de
-                                    branches, pull requests e revisões
-                                    de código.
-                                </li>
-
+                            <ul class="check-list">
+                                <li>Atuar como desenvolvedor full-stack, unindo produto e engenharia.</li>
+                                <li>Aprofundar TypeScript, testes automatizados e arquitetura de software.</li>
+                                <li>Aplicar tecnologia a problemas reais de negócio e de impacto ambiental.</li>
                             </ul>
 
                         </div>
 
                     </div>
 
+                </div>
 
-                    <div class="project-stack">
+            </div>
 
-                        <h4>Tecnologias utilizadas</h4>
+        </section>
 
-                        <div class="tags">
 
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>Node.js</span>
-                            <span>Express</span>
-                            <span>PostgreSQL</span>
-                            <span>JWT</span>
-                            <span>Git</span>
-                            <span>GitHub</span>
+        <!-- =====================================================
+             PROJETOS
+             ===================================================== -->
+
+        <section class="section section-alt" id="projetos" aria-labelledby="projetos-titulo">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        Trajetória
+                    </p>
+
+                    <h2 id="projetos-titulo">
+                        Projetos
+                    </h2>
+
+                    <p>
+                        Organizados em acadêmicos, profissionais e pessoais.
+                        Em cada um, a contribuição pessoal vem com link para a
+                        evidência no GitHub.
+                    </p>
+
+                </div>
+
+
+                <!-- ============================
+                     ACADÊMICOS
+                     ============================ -->
+
+                <div class="project-group" id="academicos">
+
+                    <div class="group-header">
+                        <h3>Acadêmicos</h3>
+                        <p>Projetos integradores (ABP) da FATEC Jacareí</p>
+                    </div>
+
+
+                    <!-- ABP 1 -->
+
+                    <article class="project-card project-card--compact">
+
+                        <header class="project-header">
+
+                            <span class="project-semester">
+                                1DSM · 1º Semestre de 2026
+                            </span>
+
+                            <h4>
+                                ScrumFlow
+                            </h4>
+
+                            <p class="project-subtitle">
+                                Portal de certificação em metodologias ágeis
+                            </p>
+
+                        </header>
+
+                        <div class="project-content">
+
+                            <div class="project-description">
+
+                                <h5>Sobre o projeto</h5>
+
+                                <p>
+                                    Portal web em que o usuário se cadastra,
+                                    realiza avaliações progressivas por módulos
+                                    e recebe um certificado digital validável por
+                                    hash. O projeto integrou HTML, CSS e
+                                    JavaScript puro no front-end, Node.js e
+                                    PostgreSQL no back-end, ao longo de três
+                                    sprints.
+                                </p>
+
+                                <p>
+                                    Meu papel foi de <strong>desenvolvedor</strong>:
+                                    33 pull requests e 148 commits, com foco em
+                                    front-end, integração com a API e
+                                    refatorações de JavaScript.
+                                </p>
+
+                            </div>
+
+                            <div class="project-contribution">
+
+                                <h5>Contribuição pessoal</h5>
+
+                                <ul class="evidence-list">
+
+                                    <li>
+                                        Estruturei as páginas iniciais em
+                                        HTML e CSS e organizei as folhas de
+                                        estilo em pastas
+                                        (<a href="https://github.com/DEVassos/scrum-flow-abp/pull/40" target="_blank"
+                                            rel="noopener noreferrer">PR #40</a>,
+                                        <a href="https://github.com/DEVassos/scrum-flow-abp/pull/60" target="_blank"
+                                            rel="noopener noreferrer">PR #60</a>).
+                                    </li>
+
+                                    <li>
+                                        Desenvolvi o modal de login e cadastro,
+                                        a navbar compartilhada e a
+                                        responsividade das telas
+                                        (<a href="https://github.com/DEVassos/scrum-flow-abp/pull/79" target="_blank"
+                                            rel="noopener noreferrer">PR #79</a>,
+                                        <a href="https://github.com/DEVassos/scrum-flow-abp/pull/137" target="_blank"
+                                            rel="noopener noreferrer">PR #137</a>,
+                                        <a href="https://github.com/DEVassos/scrum-flow-abp/pull/138" target="_blank"
+                                            rel="noopener noreferrer">PR #138</a>).
+                                    </li>
+
+                                    <li>
+                                        Implementei a página de resultado, o
+                                        sorteio de questões e o controle de
+                                        tentativas por módulo
+                                        (<a href="https://github.com/DEVassos/scrum-flow-abp/pull/143" target="_blank"
+                                            rel="noopener noreferrer">PR #143</a>,
+                                        <a href="https://github.com/DEVassos/scrum-flow-abp/pull/279" target="_blank"
+                                            rel="noopener noreferrer">PR #279</a>).
+                                    </li>
+
+                                    <li>
+                                        Construí a página do certificado, a rota
+                                        do hash de validação e o atalho no
+                                        dashboard
+                                        (<a href="https://github.com/DEVassos/scrum-flow-abp/pull/182" target="_blank"
+                                            rel="noopener noreferrer">PR #182</a>,
+                                        <a href="https://github.com/DEVassos/scrum-flow-abp/pull/183" target="_blank"
+                                            rel="noopener noreferrer">PR #183</a>).
+                                    </li>
+
+                                    <li>
+                                        Criei o histórico de questões e ajustei o
+                                        progresso real dos módulos
+                                        (<a href="https://github.com/DEVassos/scrum-flow-abp/pull/197" target="_blank"
+                                            rel="noopener noreferrer">PR #197</a>,
+                                        <a href="https://github.com/DEVassos/scrum-flow-abp/pull/173" target="_blank"
+                                            rel="noopener noreferrer">PR #173</a>).
+                                    </li>
+
+                                    <li>
+                                        Desenvolvi a página de configurações, o
+                                        painel administrativo de usuários e a
+                                        refatoração do JavaScript em módulos
+                                        (<a href="https://github.com/DEVassos/scrum-flow-abp/pull/202" target="_blank"
+                                            rel="noopener noreferrer">PR #202</a>,
+                                        <a href="https://github.com/DEVassos/scrum-flow-abp/pull/372" target="_blank"
+                                            rel="noopener noreferrer">PR #372</a>).
+                                    </li>
+
+                                </ul>
+
+                            </div>
 
                         </div>
+
+                        <div class="project-stack">
+
+                            <h5>Tecnologias</h5>
+
+                            <ul class="tags">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>PostgreSQL</li>
+                                <li>JWT</li>
+                                <li>Git Flow</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="project-footer">
+
+                            <a href="https://github.com/DEVassos/scrum-flow-abp" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
+                                Ver repositório →
+                            </a>
+
+                            <span class="project-note">
+                                Equipe DEVassos · 5 integrantes
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ABP 2 -->
+
+                    <div class="abp-intro">
+
+                        <span class="project-semester">
+                            2DSM · 2º Semestre de 2026
+                        </span>
+
+                        <h4>
+                            EcoPulse
+                        </h4>
+
+                        <p class="project-subtitle">
+                            Plataforma de observabilidade socioambiental (GreenOps)
+                        </p>
+
+                        <p>
+                            Desafio da UniLaunch: medir o impacto ambiental de
+                            aplicações de software. O EcoPulse descobre os
+                            serviços em execução, coleta CPU, memória, disco e
+                            rede e converte esses números em consumo de energia
+                            (kWh) e emissões de CO<sub>2</sub>e — ponderadas pela
+                            intensidade de carbono da região de cada serviço.
+                        </p>
+
+                        <p>
+                            Foram três entregas no mesmo semestre: o
+                            <strong>produto principal</strong>, o
+                            <strong>jogo do estande</strong> da Feira de
+                            Tecnologia e o <strong>vídeo de apresentação</strong>
+                            feito com Remotion. Fui Product Owner do produto e
+                            participei das três frentes.
+                        </p>
+
+                        <ul class="tags tags--dark">
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Node.js</li>
+                            <li>PostgreSQL</li>
+                            <li>Docker</li>
+                            <li>Tailwind CSS</li>
+                            <li>Remotion</li>
+                        </ul>
 
                     </div>
 
 
-                    <div class="project-footer">
+                    <!-- EcoPulse App -->
 
-                        <a href="https://github.com/DEVassos/scrum-flow-abp" target="_blank" rel="noopener noreferrer"
-                            class="project-link">
-                            Ver repositório →
-                        </a>
+                    <article class="project-card" id="ecopulse-app">
+
+                        <header class="project-header">
+
+                            <div class="project-heading-row">
+
+                                <div>
+
+                                    <span class="project-semester">
+                                        Produto principal · 2DSM
+                                    </span>
+
+                                    <h4>
+                                        EcoPulse App
+                                    </h4>
+
+                                    <p class="project-subtitle">
+                                        Do backlog ao dashboard: produto, front-end,
+                                        back-end e infraestrutura
+                                    </p>
+
+                                </div>
+
+                                <span class="role-badge">
+                                    Product Owner
+                                </span>
+
+                            </div>
+
+                        </header>
+
+                        <div class="project-body">
+
+                            <div class="project-description">
+
+                                <h5>Sobre o projeto</h5>
+
+                                <p>
+                                    Plataforma web completa, com front-end em
+                                    React e TypeScript, API REST em Node.js,
+                                    PostgreSQL sem ORM e execução em Docker
+                                    Compose. O dashboard mostra energia e
+                                    CO<sub>2</sub>e por serviço, mapa por região,
+                                    ranking de impacto, comparação entre serviços
+                                    e relatórios em CSV e PDF.
+                                </p>
+
+                                <p>
+                                    Como <strong>Product Owner</strong>, respondi
+                                    pelo backlog de 15 requisitos funcionais e 5
+                                    não funcionais, pelos critérios de aceite e
+                                    pelo plano de entregas das três sprints. Como
+                                    desenvolvedor, entreguei telas, rotas e
+                                    documentação — os números abaixo vêm dos
+                                    registros de participação do próprio
+                                    repositório.
+                                </p>
+
+                                <div class="metrics">
+
+                                    <div>
+                                        <strong>35</strong>
+                                        <span>PRs autorais</span>
+                                    </div>
+
+                                    <div>
+                                        <strong>109</strong>
+                                        <span>revisões de código</span>
+                                    </div>
+
+                                    <div>
+                                        <strong>226</strong>
+                                        <span>issues no backlog</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="project-contribution">
+
+                                <h5>Contribuição pessoal</h5>
+
+                                <ul class="evidence-list">
+
+                                    <li>
+                                        <strong>Produto e backlog:</strong> mantive
+                                        as histórias com critérios de aceite
+                                        Dado/Quando/Então e o checklist
+                                        “Como verificar” para o avaliador
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/issues/3" target="_blank"
+                                            rel="noopener noreferrer">#3</a>,
+                                        <a href="https://github.com/DEVassos/ecopulse-app/issues/4" target="_blank"
+                                            rel="noopener noreferrer">#4</a>,
+                                        <a href="https://github.com/DEVassos/ecopulse-app/issues/47" target="_blank"
+                                            rel="noopener noreferrer">#47</a>).
+                                    </li>
+
+                                    <li>
+                                        <strong>Planejamento:</strong> conduzi as
+                                        plannings e publiquei o plano de entregas
+                                        com 46 critérios na Sprint 3, mantendo a
+                                        rastreabilidade requisito → issue →
+                                        branch → commit → PR
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/pull/179" target="_blank"
+                                            rel="noopener noreferrer">PR #179</a>,
+                                        <a href="https://github.com/DEVassos/ecopulse-app/pull/290" target="_blank"
+                                            rel="noopener noreferrer">PR #290</a>,
+                                        <a href="https://github.com/DEVassos/ecopulse-app/pull/424" target="_blank"
+                                            rel="noopener noreferrer">PR #424</a>).
+                                    </li>
+
+                                    <li>
+                                        <strong>Dashboard e indicadores:</strong>
+                                        resumo com período anterior
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/pull/390" target="_blank"
+                                            rel="noopener noreferrer">PR #390</a>),
+                                        gráfico do histórico alternando métricas
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/pull/405" target="_blank"
+                                            rel="noopener noreferrer">PR #405</a>),
+                                        eficiência no ranking e na comparação
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/pull/389" target="_blank"
+                                            rel="noopener noreferrer">PR #389</a>),
+                                        impacto e potência por recurso
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/pull/377" target="_blank"
+                                            rel="noopener noreferrer">PR #377</a>).
+                                    </li>
+
+                                    <li>
+                                        <strong>Comparação e relatórios:</strong>
+                                        linhas de CO<sub>2</sub>e no mesmo gráfico
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/pull/407" target="_blank"
+                                            rel="noopener noreferrer">PR #407</a>),
+                                        equivalências do CO<sub>2</sub>e
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/pull/350" target="_blank"
+                                            rel="noopener noreferrer">PR #350</a>)
+                                        e impressão/PDF do Dashboard e da
+                                        Comparação
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/pull/409" target="_blank"
+                                            rel="noopener noreferrer">PR #409</a>).
+                                    </li>
+
+                                    <li>
+                                        <strong>Back-end:</strong> erros tipados e
+                                        middleware de tratamento
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/pull/233" target="_blank"
+                                            rel="noopener noreferrer">PR #233</a>),
+                                        campos de cálculo em collections
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/pull/206" target="_blank"
+                                            rel="noopener noreferrer">PR #206</a>)
+                                        e série de energia e CO<sub>2</sub>e por
+                                        intervalo
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/pull/207" target="_blank"
+                                            rel="noopener noreferrer">PR #207</a>).
+                                    </li>
+
+                                    <li>
+                                        <strong>Infraestrutura:</strong> Dockerfile
+                                        multi-stage do back-end
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/pull/91" target="_blank"
+                                            rel="noopener noreferrer">PR #91</a>)
+                                        e provisionamento documentado das
+                                        variáveis de ambiente
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/pull/82" target="_blank"
+                                            rel="noopener noreferrer">PR #82</a>).
+                                    </li>
+
+                                    <li>
+                                        <strong>Aceite e qualidade:</strong>
+                                        executei o “Como verificar” das histórias
+                                        de mapa, exportação, ambiente e
+                                        comparação
+                                        (<a href="https://github.com/DEVassos/ecopulse-app/issues/51" target="_blank"
+                                            rel="noopener noreferrer">#51</a>,
+                                        <a href="https://github.com/DEVassos/ecopulse-app/issues/54" target="_blank"
+                                            rel="noopener noreferrer">#54</a>,
+                                        <a href="https://github.com/DEVassos/ecopulse-app/issues/55" target="_blank"
+                                            rel="noopener noreferrer">#55</a>,
+                                        <a href="https://github.com/DEVassos/ecopulse-app/issues/226" target="_blank"
+                                            rel="noopener noreferrer">#226</a>),
+                                        varri 493 links em 97 arquivos e conferi as
+                                        18 rotas documentadas da API.
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="gallery" aria-label="Capturas do EcoPulse">
+
+                            <figure class="gallery-item gallery-item--wide">
+                                <img src="assets/ecopulse/dashboard.png" width="1392" height="460" loading="lazy"
+                                    alt="Dashboard do EcoPulse com o mapa de regiões e a lista de serviços com emissões">
+                                <figcaption>
+                                    Dashboard com mapa de regiões, selo “Rede limpa”
+                                    e CO<sub>2</sub>e por serviço.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="gallery-item">
+                                <img src="assets/ecopulse/comparacao.png" width="1400" height="2300" loading="lazy"
+                                    alt="Página de comparação entre serviços, com matriz, barras e dispersão">
+                                <figcaption>
+                                    Comparação entre 2 e 10 serviços, com matriz,
+                                    barras e dispersão.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="gallery-item">
+                                <img src="assets/ecopulse/dashboard-celular.png" width="780" height="1688"
+                                    loading="lazy" alt="Dashboard do EcoPulse em tela de celular">
+                                <figcaption>
+                                    Dashboard responsivo em 390 px, com leitura
+                                    preservada.
+                                </figcaption>
+                            </figure>
+
+                        </div>
+
+                        <div class="project-stack">
+
+                            <h5>Tecnologias</h5>
+
+                            <ul class="tags">
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Vite</li>
+                                <li>Tailwind CSS</li>
+                                <li>Node.js</li>
+                                <li>PostgreSQL</li>
+                                <li>JWT</li>
+                                <li>Docker Compose</li>
+                                <li>MapLibre GL</li>
+                                <li>Vitest</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="project-footer">
+
+                            <a href="https://github.com/DEVassos/ecopulse-app" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
+                                Ver repositório →
+                            </a>
+
+                            <a href="https://ecopulse-app-smoky.vercel.app" target="_blank" rel="noopener noreferrer"
+                                class="project-link project-link--muted">
+                                Ver demonstração ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- EcoPulse Desafio -->
+
+                    <article class="project-card" id="ecopulse-desafio">
+
+                        <header class="project-header">
+
+                            <div class="project-heading-row">
+
+                                <div>
+
+                                    <span class="project-semester">
+                                        Feira de Tecnologia · 2DSM
+                                    </span>
+
+                                    <h4>
+                                        EcoPulse Desafio
+                                    </h4>
+
+                                    <p class="project-subtitle">
+                                        O jogo que obrigava o visitante a olhar o
+                                        produto de verdade
+                                    </p>
+
+                                </div>
+
+                                <span class="role-badge role-badge--outline">
+                                    Concepção e estande
+                                </span>
+
+                            </div>
+
+                        </header>
+
+                        <div class="project-body">
+
+                            <div class="project-description">
+
+                                <h5>Sobre o projeto</h5>
+
+                                <p>
+                                    Jogo de perguntas e respostas em HTML, CSS e
+                                    JavaScript puro, criado para o estande da
+                                    Feira de Tecnologia. O visitante joga na
+                                    <strong>tela 2</strong>, mas as respostas só
+                                    existem no <strong>EcoPulse aberto na tela
+                                    1</strong>: para acertar, precisa usar o
+                                    dashboard real — a lista de serviços, o mapa
+                                    e a lista de regiões.
+                                </p>
+
+                                <p>
+                                    Cada partida sorteia 3 perguntas de um banco
+                                    de 13, com 3 vidas e 40 segundos por
+                                    pergunta. Há um modo de demonstração offline
+                                    para o caso de a internet do evento falhar.
+                                </p>
+
+                            </div>
+
+                            <div class="project-contribution">
+
+                                <h5>Contribuição pessoal</h5>
+
+                                <p>
+                                    Participei da <strong>concepção da
+                                    mecânica</strong> — transformar o dashboard em
+                                    parte do jogo, e não em cenário — e da
+                                    <strong>operação do estande</strong> durante a
+                                    feira, explicando o produto e conduzindo a
+                                    dinâmica com os visitantes.
+                                </p>
+
+                                <p class="note-inline">
+                                    A implementação do jogo é da Andrea Turibio,
+                                    que assina os commits do repositório. O
+                                    crédito aqui separa as duas coisas.
+                                </p>
+
+                                <ol class="steps" aria-label="Como o jogo funcionava">
+                                    <li>
+                                        <strong>O visitante senta na tela 2</strong>
+                                        e recebe uma pergunta sobre os dados do
+                                        EcoPulse.
+                                    </li>
+                                    <li>
+                                        <strong>Ele procura a resposta na tela 1</strong>,
+                                        no dashboard real, entre serviços e regiões.
+                                    </li>
+                                    <li>
+                                        <strong>Acerta e ganha a rodada</strong>;
+                                        erra e a equipe mostra onde estava a
+                                        resposta.
+                                    </li>
+                                </ol>
+
+                            </div>
+
+                        </div>
+
+                        <div class="photo-block">
+
+                            <h5>Registro do estande</h5>
+
+                            <div class="photo-gallery" id="galeria-feira" aria-live="polite"></div>
+
+                            <p class="photo-pending" id="fotos-pendentes">
+                                As fotos do estande serão publicadas aqui assim que
+                                a curadoria estiver pronta.
+                            </p>
+
+                        </div>
+
+                        <div class="project-stack">
+
+                            <h5>Tecnologias</h5>
+
+                            <ul class="tags">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>API do EcoPulse</li>
+                                <li>Web Audio</li>
+                                <li>Canvas Confetti</li>
+                                <li>Modo offline</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="project-footer">
+
+                            <a href="https://github.com/DEVassos/ecopulse-desafio" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
+                                Ver repositório →
+                            </a>
+
+                            <span class="project-note">
+                                Banco de 13 perguntas · 3 vidas · 40 s por pergunta
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- EcoPulse Vídeo -->
+
+                    <article class="project-card" id="ecopulse-video">
+
+                        <header class="project-header">
+
+                            <div class="project-heading-row">
+
+                                <div>
+
+                                    <span class="project-semester">
+                                        Apresentação · 2DSM
+                                    </span>
+
+                                    <h4>
+                                        EcoPulse Vídeo
+                                    </h4>
+
+                                    <p class="project-subtitle">
+                                        Vídeo de produto feito com código, em
+                                        Remotion
+                                    </p>
+
+                                </div>
+
+                                <span class="role-badge">
+                                    Autor principal
+                                </span>
+
+                            </div>
+
+                        </header>
+
+                        <div class="video-banner">
+
+                            <img src="assets/ecopulse/logo.png" width="512" height="286" loading="lazy"
+                                alt="Marca do EcoPulse sobre fundo escuro">
+
+                            <div class="video-banner-text">
+
+                                <p class="video-meta">
+                                    Remotion · React → vídeo · 1920×1080 · 60 fps
+                                </p>
+
+                                <p>
+                                    Sete cenas com narração, trilha e telas reais
+                                    do produto, usadas na entrega da ABP e no
+                                    estande da feira.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="project-body">
+
+                            <div class="project-description">
+
+                                <h5>Sobre o projeto</h5>
+
+                                <p>
+                                    Em vez de editar o vídeo em um programa de
+                                    timeline, as cenas foram escritas em React com
+                                    <strong>Remotion</strong>: cada quadro é
+                                    renderizado a partir de componentes. O
+                                    resultado tem cerca de 2 min 29 s, mais uma
+                                    versão curta para loop no estande.
+                                </p>
+
+                                <p>
+                                    O detalhe técnico que mais gosto: a duração de
+                                    cada cena <strong>não é escolhida à
+                                    mão</strong>. Um script lê os arquivos de
+                                    áudio da narração e gera a timeline; se a
+                                    narração for regravada, o vídeo se reajusta
+                                    sozinho e nada dessincroniza.
+                                </p>
+
+                            </div>
+
+                            <div class="project-contribution">
+
+                                <h5>Contribuição pessoal</h5>
+
+                                <p>
+                                    Fui o <strong>principal responsável pela
+                                    produção</strong>: arquitetura das cenas,
+                                    roteiro, narração, renderização e publicação —
+                                    23 dos 27 commits do repositório. Os ajustes
+                                    finais de sincronização e acabamento ficaram
+                                    com a Andrea Turibio.
+                                </p>
+
+                                <ul class="check-list check-list--tight">
+                                    <li>Timeline derivada da duração real do áudio.</li>
+                                    <li>Fallback de mídia: sem o vídeo, entra o print com selo de prévia.</li>
+                                    <li>Versão curta reaproveitando as mesmas cenas.</li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="project-stack">
+
+                            <h5>Tecnologias</h5>
+
+                            <ul class="tags">
+                                <li>Remotion</li>
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Tailwind CSS</li>
+                                <li>Node.js</li>
+                                <li>FFmpeg</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="project-footer">
+
+                            <a href="https://github.com/DEVassos/ecopulse-video" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
+                                Ver repositório →
+                            </a>
+
+                            <span class="project-note">
+                                7 cenas · 60 fps · versão curta para o estande
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ============================
+                     PROFISSIONAIS
+                     ============================ -->
+
+                <div class="project-group" id="profissionais">
+
+                    <div class="group-header">
+                        <h3>Profissionais</h3>
+                        <p>Experiência de negócio que hoje sustenta o software</p>
+                    </div>
+
+                    <div class="professional-card">
+
+                        <div class="professional-item">
+
+                            <span class="project-semester">
+                                Desde 2020
+                            </span>
+
+                            <h4>
+                                Marcenaria própria
+                            </h4>
+
+                            <p>
+                                Negócio próprio no setor de móveis planejados:
+                                prospecção, orçamento, compras, planejamento de
+                                produção, controle de estoque e atendimento ao
+                                cliente. A rotina de negociação e de prazos é a
+                                mesma que hoje aplico para priorizar um backlog.
+                            </p>
+
+                            <ul class="tags">
+                                <li>Gestão de negócio</li>
+                                <li>Orçamento</li>
+                                <li>Compras e estoque</li>
+                                <li>Atendimento</li>
+                                <li>Planejamento de produção</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="professional-note">
+
+                            <p>
+                                Projetos de software desenvolvidos para clientes
+                                não são publicados neste portfólio acadêmico.
+                                Os projetos pessoais de código estão na seção
+                                abaixo.
+                            </p>
+
+                        </div>
 
                     </div>
 
                 </div>
 
 
-                <div class="future-projects">
+                <!-- ============================
+                     PESSOAIS
+                     ============================ -->
 
-                    <div class="future-project">
+                <div class="project-group" id="pessoais">
 
-                        <span>2DSM</span>
-
-                        <h3>
-                            Projeto do 2º semestre
-                        </h3>
-
-                        <p>
-                            Projeto acadêmico a ser apresentado durante
-                            o segundo semestre de 2026.
-                        </p>
-
+                    <div class="group-header">
+                        <h3>Pessoais</h3>
+                        <p>Projetos autorais, feitos para aprender e para resolver problemas meus</p>
                     </div>
 
+                    <div class="cards-grid">
 
-                    <div class="future-project">
+                        <article class="mini-card">
 
-                        <span>3DSM</span>
+                            <span class="mini-card-tag">
+                                React · TypeScript · 2026
+                            </span>
 
-                        <h3>
-                            Projeto futuro
-                        </h3>
+                            <h4>
+                                Kurio — NFT Marketplace
+                            </h4>
 
-                        <p>
-                            Este espaço será atualizado conforme a evolução
-                            da graduação.
-                        </p>
+                            <p>
+                                Front-end completo de um marketplace: descoberta
+                                de itens, autenticação, carrinho de visitante e
+                                de usuário logado, checkout com cotação e pedido
+                                idempotente.
+                            </p>
 
-                    </div>
+                            <p class="mini-card-role">
+                                <strong>Contribuição pessoal:</strong> projeto
+                                autoral, do design system aos contratos Zod,
+                                cliente Axios, TanStack Query/Router e MSW.
+                            </p>
+
+                            <ul class="tags">
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>TanStack</li>
+                                <li>Zod</li>
+                                <li>MSW</li>
+                            </ul>
+
+                            <div class="mini-card-links">
+                                <a href="https://github.com/henriqueptbd-cell/NFT-Marketplace-Challenge" target="_blank"
+                                    rel="noopener noreferrer">Repositório →</a>
+                                <a href="https://nft-marketplace-challenge-ten.vercel.app" target="_blank"
+                                    rel="noopener noreferrer">Demo ↗</a>
+                            </div>
+
+                        </article>
 
 
-                    <div class="future-project">
+                        <article class="mini-card">
 
-                        <span>4DSM</span>
+                            <span class="mini-card-tag">
+                                JavaScript · 2026
+                            </span>
 
-                        <h3>
-                            Projeto futuro
-                        </h3>
+                            <h4>
+                                Study Tracker
+                            </h4>
 
-                        <p>
-                            Este espaço será atualizado conforme a evolução
-                            da graduação.
-                        </p>
+                            <p>
+                                Aplicativo para organizar disciplinas, conteúdos
+                                e o que já foi estudado na faculdade — feito para
+                                uso próprio durante o curso.
+                            </p>
+
+                            <p class="mini-card-role">
+                                <strong>Contribuição pessoal:</strong> concepção,
+                                interface e persistência local, publicadas no
+                                Vercel.
+                            </p>
+
+                            <ul class="tags">
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+
+                            <div class="mini-card-links">
+                                <a href="https://github.com/henriqueptbd-cell/study-tracker" target="_blank"
+                                    rel="noopener noreferrer">Repositório →</a>
+                                <a href="https://study-tracker-iota-six.vercel.app" target="_blank"
+                                    rel="noopener noreferrer">Demo ↗</a>
+                            </div>
+
+                        </article>
+
+
+                        <article class="mini-card">
+
+                            <span class="mini-card-tag">
+                                JavaScript · 2026
+                            </span>
+
+                            <h4>
+                                Simulador de Provas
+                            </h4>
+
+                            <p>
+                                Plataforma gratuita de simulados para concursos
+                                municipais, com cronômetro, sorteio de questões,
+                                gabarito comentado e histórico dos últimos
+                                resultados.
+                            </p>
+
+                            <p class="mini-card-role">
+                                <strong>Contribuição pessoal:</strong> projeto
+                                autoral completo — banco de questões, regras de
+                                prova e revisão comentada.
+                            </p>
+
+                            <ul class="tags">
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+
+                            <div class="mini-card-links">
+                                <a href="https://github.com/henriqueptbd-cell/Simulador-Provas" target="_blank"
+                                    rel="noopener noreferrer">Repositório →</a>
+                            </div>
+
+                        </article>
 
                     </div>
 
@@ -382,9 +1177,81 @@
         </section>
 
 
-        <!-- FORMAÇÃO -->
+        <!-- =====================================================
+             ATIVIDADE
+             ===================================================== -->
 
-        <section class="section" id="formacao">
+        <section class="section" id="atividade" aria-labelledby="atividade-titulo">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        GitHub
+                    </p>
+
+                    <h2 id="atividade-titulo">
+                        Atividade no código
+                    </h2>
+
+                    <p>
+                        Commits nos repositórios dos projetos do curso, de abril
+                        a novembro de 2026. O gráfico é um SVG estático gerado a
+                        partir do histórico real e guardado no próprio
+                        repositório — sem GitHub Actions e sem serviço externo.
+                    </p>
+
+                </div>
+
+                <div class="activity-card">
+
+                    <div class="activity-stats">
+
+                        <div>
+                            <strong>286</strong>
+                            <span>commits nos projetos do curso</span>
+                        </div>
+
+                        <div>
+                            <strong>35</strong>
+                            <span>PRs autorais no EcoPulse</span>
+                        </div>
+
+                        <div>
+                            <strong>109</strong>
+                            <span>revisões de código</span>
+                        </div>
+
+                        <div>
+                            <strong>33</strong>
+                            <span>PRs no ScrumFlow</span>
+                        </div>
+
+                    </div>
+
+                    <img class="activity-graph" src="assets/atividade-github.svg" width="637" height="179"
+                        loading="lazy"
+                        alt="Mapa de calor de commits por dia, de abril a novembro de 2026, com dois períodos de maior atividade: maio a junho e outubro a novembro.">
+
+                    <p class="activity-caption">
+                        Os dois blocos mais intensos coincidem com as entregas das
+                        ABPs: o ScrumFlow, entre abril e junho, e o EcoPulse, entre
+                        outubro e novembro.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FORMAÇÃO
+             ===================================================== -->
+
+        <section class="section section-alt" id="formacao" aria-labelledby="formacao-titulo">
 
             <div class="container">
 
@@ -394,12 +1261,11 @@
                         Formação
                     </p>
 
-                    <h2>
-                        Educação e conhecimentos
+                    <h2 id="formacao-titulo">
+                        Formação e conhecimentos
                     </h2>
 
                 </div>
-
 
                 <div class="education-card">
 
@@ -412,73 +1278,83 @@
                     </h3>
 
                     <p>
-                        FATEC – Faculdade de Tecnologia do Estado de São Paulo
+                        FATEC — Faculdade de Tecnologia do Estado de São Paulo
                         · Unidade Jacareí
                     </p>
 
                     <span class="education-status">
-                        Graduação tecnológica em andamento
+                        Graduação tecnológica em andamento · turma de 2026
                     </span>
 
                 </div>
 
+                <div class="skills-grid">
 
-                <div class="skills">
+                    <div class="skills">
 
-                    <h3>
-                        Principais conhecimentos
-                    </h3>
+                        <h3>
+                            Conhecimentos técnicos
+                        </h3>
 
-                    <div class="tags">
+                        <ul class="tags">
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>React</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Tailwind CSS</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>APIs REST</li>
+                            <li>PostgreSQL</li>
+                            <li>SQL</li>
+                            <li>Docker</li>
+                            <li>Git e GitHub</li>
+                            <li>Vitest</li>
+                            <li>Remotion</li>
+                            <li>Scrum</li>
+                        </ul>
 
-                        <span>JavaScript</span>
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>React</span>
-                        <span>Next.js</span>
-                        <span>Node.js</span>
-                        <span>APIs REST</span>
-                        <span>PostgreSQL</span>
-                        <span>Firebase</span>
-                        <span>Git</span>
-                        <span>GitHub</span>
-                        <span>Metodologias Ágeis</span>
+                    </div>
+
+                    <div class="skills">
+
+                        <h3>
+                            Formação complementar
+                        </h3>
+
+                        <ul class="check-list">
+                            <li>Estudo autodidata guiado por projetos: React, TypeScript, Node.js e PostgreSQL.</li>
+                            <li>Prática de Git Flow, revisão de código e Conventional Commits em equipe.</li>
+                            <li>Modelagem de dados e documentação técnica (ADRs, UML, critérios de aceite).</li>
+                            <li>Vídeo como código com Remotion e automação de renderização.</li>
+                        </ul>
+
+                        <h3 class="skills-subtitle">
+                            Idiomas
+                        </h3>
+
+                        <ul class="check-list check-list--tight">
+                            <li>Português — nativo.</li>
+                            <li>Inglês — leitura técnica e documentação.</li>
+                        </ul>
 
                     </div>
 
                 </div>
 
-            </div>
+                <div class="hobbies">
 
-        </section>
-
-
-        <!-- PORTFÓLIO PROFISSIONAL -->
-
-        <section class="section section-highlight">
-
-            <div class="container">
-
-                <div class="professional-portfolio">
-
-                    <p class="eyebrow">
-                        Além da graduação
-                    </p>
-
-                    <h2>
-                        Portfólio profissional
-                    </h2>
+                    <h3>
+                        Hobbies e interesses
+                    </h3>
 
                     <p>
-                        Meus projetos pessoais e profissionais, aplicações
-                        desenvolvidas e evolução técnica estão disponíveis
-                        no meu portfólio pessoal do GitHub.
+                        Marcenaria e cultura maker — o mesmo gosto por construir
+                        coisas que me trouxe para o software. Também me interessam
+                        eficiência energética, sustentabilidade aplicada a
+                        tecnologia e jogos que ensinam alguma coisa.
                     </p>
-
-                    <a href="https://github.com/henriqueptbd-cell" target="_blank" rel="noopener noreferrer"
-                        class="button button-primary">
-                        Acessar meu GitHub
-                    </a>
 
                 </div>
 
@@ -487,21 +1363,28 @@
         </section>
 
 
-        <!-- CONTATO -->
+        <!-- =====================================================
+             CONTATO
+             ===================================================== -->
 
-        <section class="section" id="contato">
+        <section class="section" id="contato" aria-labelledby="contato-titulo">
 
             <div class="container">
 
                 <div class="section-heading">
 
                     <p class="eyebrow">
-                        Contato profissional
+                        Contato
                     </p>
 
-                    <h2>
-                        Vamos nos conectar
+                    <h2 id="contato-titulo">
+                        Vamos conversar
                     </h2>
+
+                    <p>
+                        Redes profissionais. Sem e-mail ou telefone, conforme as
+                        orientações do portfólio institucional.
+                    </p>
 
                 </div>
 
@@ -509,11 +1392,13 @@
 
                     <a href="https://github.com/henriqueptbd-cell" target="_blank" rel="noopener noreferrer">
                         GitHub
+                        <span>@henriqueptbd-cell</span>
                     </a>
 
                     <a href="https://www.linkedin.com/in/henrique-camargo-6275a6394/" target="_blank"
                         rel="noopener noreferrer">
                         LinkedIn
+                        <span>Henrique Camargo</span>
                     </a>
 
                 </div>
@@ -530,7 +1415,7 @@
         <div class="container">
 
             <p>
-                Henrique G. Camargo · FATEC Jacareí · Desenvolvimento de
+                Henrique Gussao Camargo · FATEC Jacareí · Desenvolvimento de
                 Software Multiplataforma
             </p>
 
