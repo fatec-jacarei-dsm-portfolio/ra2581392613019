@@ -15,7 +15,7 @@
 
 **Vídeos de Apresentação**
 
-🎤 2DSM - *(em produção — roteiro e gravação do pitch de 1 minuto)*  
+🎤 2DSM - [Vídeo](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392613019/#pitch)  
 🎤 4DSM - A ser disponibilizado  
 🎤 6DSM - A ser disponibilizado
 
